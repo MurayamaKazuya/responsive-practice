@@ -1,0 +1,127 @@
+@charset "UTF-8";
+
+.wrapper{
+  width: 1100px;
+  margin: 0 auto;
+}
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.red--box{
+  background: #ff0000;
+  margin:0 auto;
+  width: 400px;
+  height:400px;
+}
+.box{
+  width:300px;
+  height:300px;
+  text-align:center;
+  line-height: 300px;
+}
+.color--change{
+  margin:0 auto;
+  background: #ff0000;
+}
+.margin--box{
+  text-align:center;
+}
+.blue--box{
+  background: #0008ff;
+  display:inline-block;
+  margin-right: 150px;
+}
+.green--box{
+  background: #22ff00;
+  display:inline-block;
+}
+.float{
+  text-align:center;
+  font-size: 0;
+}
+.float--red{
+  background: #ff0000;
+  display: inline-block;
+}
+.float--blue{
+  background: #0008ff;
+  display: inline-block;
+}
+.flex--reverse{
+  display: flex;
+  justify-content: center;
+}
+.A--red{
+  background: #ff0000;
+}
+.B--blue{
+  background: #0008ff;
+}
+.C--orange{
+  background: #ff8400;
+}
+.flex--placement{
+  display: flex;
+  justify-content: center;
+}
+.first--pink{
+  background: #ff00e1;
+  }
+.second--green{
+  background: #00ff51;
+  }
+.third--yellow{
+  background: #d4ff00;
+  }
+.hidden--box{
+  display: flex;
+  justify-content: center;
+}
+.hidden--red{
+  background: #ff0000;
+}
+.hidden--blue{
+  background: #0008ff;
+  display: none;
+}
+.hidden--green{
+  background: #00ff51;
+}
+@media screen and (max-width:959px){
+.red--box{
+  width:200px;
+  height:200px;
+}
+.color--change{
+  background: #007bff;
+}
+.blue--box{
+  margin-right: 50px;
+}
+.float--red{
+  display: block;
+}
+.float--blue{
+  display: block;
+}
+.flex--reverse{
+  flex-direction: row-reverse;
+}
+.first--pink{
+order: 1;
+}
+.second--green{
+order: 2;
+}
+.third--yellow{
+order: 3;
+}
+.hidden--red{
+  display: none;
+}
+.hidden--blue{
+  display: initial;
+}
+}
