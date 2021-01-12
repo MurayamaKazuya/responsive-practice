@@ -27,6 +27,7 @@
 }
 .margin--box{
   text-align:center;
+  font-size: 0;
 }
 .blue--box{
   background: #0008ff;
@@ -38,20 +39,21 @@
   display:inline-block;
 }
 .float{
-  text-align:center;
-  font-size: 0;
+  width:600px;
+  margin: 0 auto;
 }
 .float--red{
   background: #ff0000;
-  display: inline-block;
+  float: left;
 }
 .float--blue{
   background: #0008ff;
-  display: inline-block;
+  float: left;
 }
 .flex--reverse{
   display: flex;
   justify-content: center;
+  flex-direction: row;
 }
 .A--red{
   background: #ff0000;
@@ -68,12 +70,15 @@
 }
 .first--pink{
   background: #ff00e1;
+  order: 3;
   }
 .second--green{
   background: #00ff51;
+  order: 1;
   }
 .third--yellow{
   background: #d4ff00;
+  order: 2;
   }
 .hidden--box{
   display: flex;
@@ -81,6 +86,7 @@
 }
 .hidden--red{
   background: #ff0000;
+  display: block;
 }
 .hidden--blue{
   background: #0008ff;
@@ -101,10 +107,10 @@
   margin-right: 50px;
 }
 .float--red{
-  display: block;
+  float: none;
 }
 .float--blue{
-  display: block;
+  float: none;
 }
 .flex--reverse{
   flex-direction: row-reverse;
@@ -118,10 +124,7 @@ order: 2;
 .third--yellow{
 order: 3;
 }
-.hidden--red{
-  display: none;
-}
 .hidden--blue{
-  display: initial;
+  display: block;
 }
 }
